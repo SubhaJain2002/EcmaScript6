@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Operators</h1>
+<h2>The ... Operator</h2>
+
+<p>The "spread" operator spreads elements of iterable objects:</p>
+
+<p id="name"></p>
+
+<script>
+const A = ["Sun", "Mon","Tues"];
+const B = ["Tues", "Wed","Thurs"];
+const C = ["Thurs", "Fri","Sat"];
+const D = ["Sat", "Sun","Mon"];
+
+const Week = [...A, ...B, ...C, ...D];
+document.getElementById("name").innerHTML = Week; 
+</script>
+    
+</body>
+</html>

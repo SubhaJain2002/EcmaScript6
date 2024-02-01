@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Classes</h1>
+<p>Creating two car objects from a Colour class:</p>
+
+<p id="name"></p>
+
+<script>
+class Colour {
+  constructor(name, year) {
+    this.name = name;
+    this.year = year;
+  }
+}
+
+const Colour1 = new Colour("Red", 2023);
+const Colour2 = new Colour("Orange", 2024);
+
+document.getElementById("name").innerHTML =
+Colour1.name + " " + Colour2.name;
+</script>
+    
+</body>
+</html>
